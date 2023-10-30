@@ -67,4 +67,4 @@ validate installation with
 
 ```git --version```
 
-once you do this create a gilhub account
+once you do this create a github account
