@@ -50,7 +50,7 @@ what other datatypes are there?
 
 8 byte floating point - ```double```
 
-\* the size of an int depends on the system. Int was typically a *WORD* size or the size that a CPU used but that has changed overtime (C is an OLD language). On desktops it is now 32 bytes (same as a long) and we will cover how to deal with this inconsistancy later
+\* the size of an int depends on the system. Int was typically a *WORD* size or the size that a CPU used but that has changed overtime (C is an OLD language). On desktops it is now 32 bits (same as a long) and we will cover how to deal with this inconsistancy later
 
 ## In practice
 
