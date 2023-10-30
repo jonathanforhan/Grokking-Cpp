@@ -7,7 +7,7 @@ We will be starting our journey with the [C Programming Language](https://en.wik
 To down MinGW:
 - go to [MSYS2](https://www.msys2.org/) and download the installer.
 - open MSYS2 (64-bit) and type
-    > ```pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain```
+    ```pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain```
 
 - Add the path to your MinGW-w64 bin folder to the Windows PATH environment variable by using the following steps:
     - In the Windows search bar, type Settings to open your Windows Settings.
@@ -17,22 +17,22 @@ Search for Edit environment variables for your account.
     - Select OK to save the updated PATH. You will need to reopen any console windows for the new PATH location to be available.
 
 - now validation your installation by running in powershell:
-    > ```gcc --version```
+    ```gcc --version```
 
-    > ```g++ --version```
+    ```g++ --version```
 
-    > ```gdb --version```
+    ```gdb --version```
 
 ## Writing you first program
 
 We will be using Visual Studio Code for this. Download for that is easy. Be sure to download the **C/C++ Extension** by Microsoft.
 
 in powershell navigate to your coding directory (whatever you choose) and do
-> ```mkdir hello_world```
+```mkdir hello_world```
 
-> ```cd hello_world```
+```cd hello_world```
 
-> ```code .```
+```code .```
 
 this will bring up VSCode. From here you make a new file named **hello_world.c** and type
 ```C
@@ -47,15 +47,15 @@ int main(void) {
 
 now from the terminal in the hello_world directory run
 
-> ```gcc .\hello_world.c -o hello_world```
+```gcc .\hello_world.c -o hello_world```
 
 this command tells gcc to compile you C code and output an executable named hello_world. Run it by executing
 
-> ```.\hello_world.exe```
+```.\hello_world.exe```
 
 you will get 
 
-> ```Hello World!```
+```Hello World!```
 
 as output
 
@@ -65,6 +65,6 @@ to share and manage code we will be using Git. to download it go to https://git-
 
 validate installation with 
 
-> ```git --version```
+```git --version```
 
 once you do this create a gilhub account
