@@ -2,11 +2,12 @@
 
 ## Starting with C
 
-We will be starting our journey with the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language)). C is a *compiled* language, this means that we write code in C and then a compiler turns that into binary machine code to run directly by a computer. The of course means that you will need to get a C compiler. For this course we will be using MinGW, (the Minimalist GNU for Window compiler.) This compiler can compile both C and C++ as well as a few other languages.
+We will be starting our journey with the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language)). C is a *compiled* language, this means that we write code in C and then a compiler turns that into binary machine code to run directly by a computer. This of course means that you will need to get a C compiler. For this course we will be using MinGW, (the Minimalist GNU for Window compiler.) This compiler can compile both C and C++ as well as a few other languages.
 
 To down MinGW:
 - go to [MSYS2](https://www.msys2.org/) and download the installer.
 - open MSYS2 (64-bit) and type
+
     ```pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain```
 
 - Add the path to your MinGW-w64 bin folder to the Windows PATH environment variable by using the following steps:
@@ -17,6 +18,7 @@ Search for Edit environment variables for your account.
     - Select OK to save the updated PATH. You will need to reopen any console windows for the new PATH location to be available.
 
 - now validation your installation by running in powershell:
+
     ```gcc --version```
 
     ```g++ --version```
@@ -28,6 +30,7 @@ Search for Edit environment variables for your account.
 We will be using Visual Studio Code for this. Download for that is easy. Be sure to download the **C/C++ Extension** by Microsoft.
 
 in powershell navigate to your coding directory (whatever you choose) and do
+
 ```mkdir hello_world```
 
 ```cd hello_world```
@@ -35,11 +38,13 @@ in powershell navigate to your coding directory (whatever you choose) and do
 ```code .```
 
 this will bring up VSCode. From here you make a new file named **hello_world.c** and type
+
 ```C
 #include <stdio.h> /* Includes the standard I/O header */
 
 int main(void) {
-    // printf is the C function for printing a formatted string, %s mean we insert another string into the format, in this case the string "World!"
+    // printf is the C function for printing a formatted string, %s mean we 
+    // insert another string into the format, in this case the string "World!"
     printf("Hello, %s\n", "World!");
     return 0;
 }
