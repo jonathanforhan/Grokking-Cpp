@@ -72,8 +72,7 @@ example:
 // This has no effect other than documentation of the function
 /**
  * @name square
- * @param int a
- * @param int b
+ * @param int x
  * @return int
  */
 int square(int x) {
