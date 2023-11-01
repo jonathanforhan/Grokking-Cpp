@@ -123,4 +123,5 @@ int main(void) {
     return 0;
 }
 ```
+
 note we get ```A = 4.000000, and B = 3.000000, so C = 5.000000``` because we have %f which prints floating points. Try printing them as ints
